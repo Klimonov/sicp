@@ -3,18 +3,18 @@
 ## Exercises of "Structure and Interpretation of Computer Programs"
 
 
+<br>
 
-## Setup
+### Setup
 ```sh
 $ sudo install racket
 ```  
-<br>
 
-## Run code
+### Run code
 ```sh
 $ racket exercises.rkt
 ```  
-## Or run for test
+### Or run for test
 ```sh
 $ racket tests.rkt
 ```  
