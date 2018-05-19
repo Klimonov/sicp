@@ -1,7 +1,8 @@
 #lang racket/base
 
-(require rackunit "Exercises.rkt")
+(require rackunit "exercises.rkt")
 
-(check-equal? (sqr 5) 25)
-(check-equal? (sqr 0) 0)
-(check-equal? (sqr -10) 100)
+;Exercise 01
+(check-equal? (sum-of-squares-of-top-two 1 2 3) 13)
+(check-equal? (sum-of-squares-of-top-two 3 4 2) 25)
+(check-equal? (sum-of-squares-of-top-two 5 3 4) 41)
