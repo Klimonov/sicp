@@ -47,3 +47,22 @@ The numbers at the edge of the triangle are all 1, and each number inside the tr
     )
 )
 (provide pascal-triangle)
+
+;Exercise 1.3~.Double.
+(define (double func) 
+    (lambda (a) (func (func a)))
+)
+(provide double)
+
+;Exercise 1.3~.Repeated application.
+ (define (iter acc f arg)
+	(if (= acc 1) 
+			(f arg)
+			(iter (- acc 1) f (f arg))
+    )
+)
+	
+(define (repeated f count) 
+  (lambda (n) (iter count f n))
+)
+(provide repeated)
